@@ -6,7 +6,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-gray-100 dark:bg-slate-800">
+      <div className="min-h-screen bg-primaire dark:bg-fondSombre">
         <Navbar />
         <main className="p-10">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
