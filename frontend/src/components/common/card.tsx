@@ -67,15 +67,17 @@ export default function RealEstateCard() {
           </div>
 
           <CardContent className="p-3 flex-1 flex flex-col">
-            {/* Prix */}
-            <p className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-1">
-              {property.price}
-            </p>
+            
 
             {/* Titre */}
             <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1 line-clamp-2 text-sm">
               {property.title}
             </h3>
+
+            {/* Prix */}
+            <p className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-1">
+              {property.price}
+            </p>
             
             {/* Localisation */}
             <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400 mb-2">
