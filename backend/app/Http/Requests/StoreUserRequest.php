@@ -28,4 +28,18 @@ class StoreUserRequest extends FormRequest
             'password' => 'required|string|min:8|confirmed',
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'firstname.required' => 'Prenom requis',
+            'lastname.required' => 'Nom de famille requis',
+            'email.required' => 'Email requis',
+            'email.email' => 'Email doit être une adresse email valide',
+            'email.unique' => 'Email est déjà utilisé',
+            'password.required' => 'Mot de passe requis',
+            'password.min' => 'Mot de passe doit contenir au moins 8 caractères',
+            'password.confirmed' => 'Confirmation du mot de passe ne correspond pas',
+        ];
+    }
 }
