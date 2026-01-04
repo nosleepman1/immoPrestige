@@ -4,6 +4,7 @@ import RealEstateCard from './components/common/card'
 import { ThemeProvider } from './context/themeProvider'
 import { ModeToggle } from './components/common/themeButton'
 import NavbarImmobilier from './components/static/navbar'
+import AuthComponent from './pages/auth/register'
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
 
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       < NavbarImmobilier />
-       <RealEstateCard />
+      <div className='bloc mt-4'>
+        <AuthComponent />
+      </div>
     </ThemeProvider>
 
   )
