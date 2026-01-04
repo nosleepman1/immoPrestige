@@ -6,6 +6,7 @@ import { ModeToggle } from './components/common/themeButton'
 import NavbarImmobilier from './components/static/navbar'
 import AuthComponent from './pages/auth/register'
 import PropertyForm from './pages/admin/addBien'
+import PropertyList from './pages/admin/showProperties'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       < NavbarImmobilier />
       <div className='bloc mt-4'>
         {/* <AuthComponent /> */}
-        < PropertyForm />
+        < PropertyList />
       </div>
     </ThemeProvider>
 
