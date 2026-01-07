@@ -22,7 +22,7 @@ class UpdateAgencyRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            
         ];
     }
 }

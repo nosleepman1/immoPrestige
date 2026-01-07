@@ -22,7 +22,11 @@ class StoreAgencyRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => 'required|string|max:255',
+            'address' => 'required|string|max:500',
+            'phone' => 'required|string|max:20',
+            'email' => 'required|string|email|max:255|unique:agencies,email',
+            'password' => 'required|string|min:8|confirmed',
         ];
     }
 }

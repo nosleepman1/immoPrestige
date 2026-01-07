@@ -22,7 +22,8 @@ class StoreLikeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'post_id' => 'required|integer|exists:posts,id',
+            'user_id' => 'required|integer|exists:users,id',
         ];
     }
 }

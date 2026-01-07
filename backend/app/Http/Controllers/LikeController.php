@@ -14,6 +14,7 @@ class LikeController extends Controller
     public function index()
     {
         //
+
     }
 
     /**
@@ -21,7 +22,7 @@ class LikeController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -29,7 +30,7 @@ class LikeController extends Controller
      */
     public function store(StoreLikeRequest $request)
     {
-        //
+        
     }
 
     /**
