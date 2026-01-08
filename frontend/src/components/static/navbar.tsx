@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { Home, Compass, Building2, Menu, X, LogIn } from 'lucide-react';
+import { Home, Compass, Building2, Menu, X, LogIn, Link } from 'lucide-react';
 import { ModeToggle } from '../common/themeButton';
 
 
@@ -31,7 +31,7 @@ export default function NavbarImmobilier() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  ImmoLuxe
+                  ImmoPrestige
                 </h1>
                 <p className="text-xs -mt-1 text-gray-500 dark:text-gray-400 transition-colors">
                   Votre bien immobilier
@@ -45,7 +45,7 @@ export default function NavbarImmobilier() {
                 const Icon = link.icon;
                 const isActive = activeLink === link.id;
                 return (
-                  <button
+                  <Link
                     key={link.id}
                     onClick={() => setActiveLink(link.id)}
                     className={`relative px-5 py-2.5 rounded-lg flex items-center space-x-2 transition-all duration-300 ${
@@ -62,7 +62,7 @@ export default function NavbarImmobilier() {
                     {isActive && (
                       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"></div>
                     )}
-                  </button>
+                  </Link>
                 );
               })}
             </div>
